@@ -1,0 +1,81 @@
+body{
+    font-family: 'Space Grotesk';
+    padding: 0;
+     margin: 0;
+}
+
+.text-link{
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.input{
+    border: 0;
+    background: #F7F7F7;
+    padding: 1.3vw 3vw;
+    width: 25vw;
+    margin: 0.7vw 0;
+    border-radius: 2vw;
+    font-family: 'Space Grotesk';
+}
+.button{
+    border: 0;
+    background: #000;
+    padding: 1.3vw 3vw;
+    cursor: pointer;
+    margin: 0.5vw 0;
+    border-radius: 2vw;
+    margin-top: 2vw;
+    color: white;
+    font-family: 'Space Grotesk';
+}
+
+.auth-layout{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 6vh;
+    justify-content: space-between;
+}
+
+.form-layout{
+    margin-left: 6vw;
+
+}
+.auth-header{
+    margin-top: 9vh;
+}
+.auth-header-title{
+    font-size: 3.5vw;
+    font-weight: 700 !important;
+    margin: 0;
+}
+.auth-header-img{
+    width: 3vw;
+    margin-bottom: 1vw;
+}
+.auth-header-text{
+    color: gray;
+}
+
+.auth-image{
+    width: 40vw;
+    border-radius: 2vw;
+    height: 88vh;
+    background: url(https://images.unsplash.com/photo-1633907284646-7abf4a195875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    background-size: cover;
+}
+.auth-form-layout{
+    color: gray;
+    margin-top: 2vw;
+    font-size: 0.9vw;
+}
+.auth-form{
+    margin-bottom: 6vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
