@@ -1,8 +1,11 @@
 import ReactDOM from 'react-dom';
-import React from 'react';
+import React, { useState } from 'react';
+import Login from './src/pages/login';
+import Dashboard from './src/pages/dashboard';
 
 const App = () => {
- return <h1>This is my React app!</h1>;
- }
+const [auth, setAuth] = useState(false)
+     return auth? <Login/>: <Dashboard />; 
+}
 
 ReactDOM.render(<App />, document.getElementById('root'))

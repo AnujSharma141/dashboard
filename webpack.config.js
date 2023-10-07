@@ -1,10 +1,18 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const htmlPlugin = new HtmlWebPackPlugin({
- template: "./public/index.html",
- filename: "./index.html"
-});
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
+entry: "./app.js",
+output: {
+filename: "bundle.[hash].js",
+path: path.resolve(__dirname, "dist")
+},
 mode: 'development',
+plugins: [
+  new HtmlWebpackPlugin({
+    template: "./public/index.html",
+  }),
+],
   module: {
     rules: [{
    test: /\.js$/,
@@ -18,5 +26,4 @@ mode: 'development',
    use: ["style-loader", "css-loader"]
   }
 ]},
- plugins: [htmlPlugin]
 };
