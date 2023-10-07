@@ -10,7 +10,7 @@ export default function Auth() {
       <div className='form-layout'>
         <div className='auth-header'>
         <img src="https://i.ibb.co/3f2hXfT/logo.png" className='auth-header-img' alt="logo" />
-            <p className='auth-header-text'>spring boot + react</p>
+            <p className='auth-header-text'>Spring Boot + React</p>
             <p className='auth-header-title'>dashboard</p>
         </div>
         <div className='auth-form-layout'>

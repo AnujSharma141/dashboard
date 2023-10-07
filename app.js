@@ -5,7 +5,7 @@ import Dashboard from './src/pages/dashboard';
 import './src/style/style.css'
 
 const App = () => {
-const [auth, setAuth] = useState(false)
+const [auth, setAuth] = useState(true)
      return auth? <Dashboard />: <Login/>; 
 }
 
