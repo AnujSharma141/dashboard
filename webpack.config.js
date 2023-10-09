@@ -7,6 +7,9 @@ output: {
 filename: "bundle.[hash].js",
 path: path.resolve(__dirname, "dist")
 },
+devServer: {
+  port: 9000
+},
 mode: 'development',
 plugins: [
   new HtmlWebpackPlugin({
