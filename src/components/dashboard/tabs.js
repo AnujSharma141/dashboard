@@ -4,8 +4,8 @@ export default function Tabs({data}) {
 
     const averageAge = (data) =>{
         let ageSum = 0
-        data.map(user=> ageSum = ageSum + user.age)
-        return Number(ageSum/data.length).toPrecision(4)
+        data.value.map(user=> ageSum = ageSum + user.age)
+        return Number(ageSum/data.value.length).toPrecision(4)
     }
 
     const Tab = ({text, metric}) => <div className='tab'>
@@ -15,8 +15,8 @@ export default function Tabs({data}) {
 
   return (
     <div className='tabs'>
-            <Tab text="users registered" metric={data.length} />
-            <Tab text="average age" metric={averageAge(data)} />
+            <Tab text="users registered" metric={data.status?data.value.length:0} />
+            <Tab text="average age" metric={data.status?averageAge(data):0} />
     </div>
   )
 }

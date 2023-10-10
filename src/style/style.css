@@ -170,6 +170,17 @@ body{
     color:gray;
 }
 
+
+.loader-layout{
+    width: 35vw;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.loader{
+    width: 5vw;
+}
 .user-table{
     margin: 0vw 0vw;
     width: 100%;
