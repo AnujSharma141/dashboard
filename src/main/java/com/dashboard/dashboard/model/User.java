@@ -30,6 +30,11 @@ public class User {
         this.age = age;
     }
 
+    public User(String email, String pin){
+        this.email = email;
+        this.pin = pin;
+    }
+
     public String getEmail(){
         return this.email;
     }

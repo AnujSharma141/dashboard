@@ -3,6 +3,8 @@ package com.dashboard.dashboard.service;
 import java.util.List;
 
 import com.dashboard.dashboard.model.User;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.dashboard.dashboard.dao.UserRepository;
@@ -10,6 +12,7 @@ import com.dashboard.dashboard.dao.UserRepository;
 @Service
 public class UserService {
 
+    @Autowired
     private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository){
@@ -24,7 +27,16 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public int userPresent(){
-        return 1;
+    public User authenticate(String email, String password){
+        User user = userRepository.findByEmail(email);
+        if(user != null && user.getPin().equals(password)){
+            return user;
+        }
+        return null;
+    }
+
+    public User userPresent(String email){
+        User user = userRepository.findByEmail(email);
+        return user;
     }
 }
