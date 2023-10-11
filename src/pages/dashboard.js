@@ -13,15 +13,6 @@ useEffect(()=>{
     axios.get('https://dashboard-2cw8.onrender.com/users').then(response=>setData({status:true, value:response.data}))
 },[])
 
-// const data = [{email: "lebron@email.com", age: 24}, 
-// {email: "steph@email.com", age: 21}, 
-// {email: "kevin@email.com", age: 20},
-// {email: "lebron@email.com", age: 24}, 
-// {email: "steph@email.com", age: 21}, 
-// {email: "kevin@email.com", age: 20},
-// {email: "lebron@email.com", age: 24}, 
-// {email: "steph@email.com", age: 21}, 
-// {email: "kevin@email.com", age: 20}]
   return (
     <div className='dashboard-layout'>
         <Nav />

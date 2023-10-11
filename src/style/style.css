@@ -31,6 +31,18 @@ body{
     font-family: 'Space Grotesk';
 }
 
+
+.universal-loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #dadada8e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .auth-layout{
     display: flex;
     flex-direction: row;
@@ -87,6 +99,8 @@ body{
 
 .dashboard-layout{
     display: flex;
+    background: #ffffff;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
 }
@@ -98,6 +112,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1vw 3vw;
+    height: 10vh;
     box-sizing: border-box;
 }
 .nav-logo{
@@ -108,6 +123,11 @@ body{
     color: white;
     cursor: pointer;
     text-decoration: underline;
+}
+.nav-user{
+    color: white;
+    font-size: 0.95vw;
+    margin-left: 70vw;
 }
 
 .dashboard-content{

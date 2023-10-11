@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://i.ibb.co/tx5vHDP/Screenshot-2023-10-10-212937.png" alt="Strapi logo" />
+    <img src="https://i.ibb.co/tx5vHDP/Screenshot-2023-10-10-212937.png" />
 </p>
 
 ## Development
