@@ -13,13 +13,14 @@ export default function Signup(props) {
     const formSubmit = (e) =>{
         
         e.preventDefault()
-        setloader(true)
         const userCredentials = {
             email: email,
             pin: password,
             age: age
           }
-          if(password == confirm)
+          
+          if(password == confirm){
+          setloader(true)
           axios.post('https://dashboard-2cw8.onrender.com/register', userCredentials)
             .then((response) => {
             setloader(false)
@@ -29,7 +30,7 @@ export default function Signup(props) {
             .catch((error) => {
                 setloader(false)
                toast.error(error.response.data)
-            })
+            })}
             else(toast.error("Check password!"))
     }
     return (
